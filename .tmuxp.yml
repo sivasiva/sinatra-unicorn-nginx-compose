@@ -1,0 +1,15 @@
+session_name: tfh
+start_directory: ./
+windows:
+ - window_name: nvim
+   panes:
+     - nvim
+ - window_name: two
+   panes:
+     - cal
+ - window_name: three
+   panes:
+     - pwd
+ - window_name: four
+   panes:
+     - v .
