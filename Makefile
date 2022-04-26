@@ -1,6 +1,7 @@
 .PHONY: setup serve clean shell
 
 setup:
+	clear
 	docker-compose build
 
 serve: setup
@@ -14,3 +15,7 @@ shell:
 
 test:
 	bash url_tests.sh
+
+u:
+	clear
+	cd app && bundle exec unicorn -p 9292 -c unicorn.rb
