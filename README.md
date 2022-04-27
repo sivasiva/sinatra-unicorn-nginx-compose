@@ -1,4 +1,6 @@
-# Sinatra + Nginx + Docker compose
+# Sinatra + Unicorn + Nginx + Docker compose
+
+## [Original](https://github.com/booyaa/singinx)
 
 ## What is this
 
