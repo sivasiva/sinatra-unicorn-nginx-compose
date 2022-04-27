@@ -8,7 +8,14 @@ class MyWay < Sinatra::Base
   end
 
   register Sinatra::Namespace
+
+  get '/' do
+    logger.info "/ parameters: #{params}"
+    "Hello! And Welcome!! Params: #{params.inspect}"
+  end
+
   namespace '/api' do
+
     get '/foo' do
       logger.info "api/foo parameters: #{params}"
       params.inspect
@@ -16,7 +23,7 @@ class MyWay < Sinatra::Base
 
     post '/bar' do
       logger.info "api/bar parameters: #{params}"
-        puts "/api/bar - params (#{params.inspect})"
+      puts "/api/bar - params (#{params.inspect})"
       params.inspect
     end
 
