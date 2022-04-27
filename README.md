@@ -1,6 +1,6 @@
 # Sinatra + Unicorn + Nginx + Docker compose
 
-## [Original](https://github.com/booyaa/singinx)
+## [Original Credits](https://github.com/booyaa/singinx)
 
 ## What is this
 
